@@ -1,0 +1,32 @@
+{
+  "name": "purescript-halogen-electron",
+  "version": "0.0.1",
+  "description": "Purscript halogen components for electron",
+  "scripts": {
+    "startsingle": "pulp build  --main SingleWindow --to examples/singlewindow/singlewindow.js && electron examples/singlewindow/singlewindow.js",
+    "start": "pulp build --to index.js && electron index.js",
+    "test": "pulp test"
+  },
+  "directories": {
+    "examples": "examples",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxhillaert/purescript-halogen-electron.git"
+  },
+  "author": "Max Hillaert",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maxhillaert/purescript-halogen-electron/issues"
+  },
+  "dependencies": {
+    "pulp": "^11.0.2",
+    "purescript": "^0.11.6",
+    "purescript-psa": "^0.5.1"
+  },
+  "devDependencies": {
+    "electron": "1.7.9"
+  },
+  "homepage": "https://github.com/maxhillaert/purescript-halogen-electron#readme"
+}

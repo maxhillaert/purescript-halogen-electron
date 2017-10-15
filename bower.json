@@ -1,0 +1,20 @@
+{
+    "name": "purescript-halogen-electron",
+    "version": "1.0.0",
+    "moduleType": [
+      "node"
+    ],
+    "ignore": [
+      "**/.*",
+      "node_modules",
+      "bower_components",
+      "output"
+    ],
+  
+    "dependencies": {
+      "purescript-halogen": "^2.3.0",
+      "purescript-electron": "https://github.com/maxhillaert/purescript-electron.git#master",
+      "purescript-eff": "^3.1.0"
+    }
+  }
+  
