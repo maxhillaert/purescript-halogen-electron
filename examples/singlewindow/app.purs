@@ -1,5 +1,6 @@
 module App where
 
+import Node.Globals
 import Prelude
 import Control.Monad.Eff (Eff)
 import Control.Monad.Eff.Console (CONSOLE, log)
@@ -18,8 +19,8 @@ main = do
     mainWindow <- newBrowserWindow [ Width 1200
                                    , Height 600
                                    , WebPreferences [ OverlayScrollbars true
-                                                    , ZoomFactor 2.0
+                                                    , ZoomFactor 1.0
                                                     ]
                                    ]
     mainWindow `onClose` quit
-    mainWindow `loadURL` "file://${__dirname}/examples/singlewindow/window.html"
+    mainWindow `loadURL` ("file://" <> __dirname <> "/window.html")

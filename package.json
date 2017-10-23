@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Purscript halogen components for electron",
   "scripts": {
-    "startsingle": "pulp build  --main App --to examples/singlewindow/app.js && electron examples/singlewindow/app.js",
+    "startsingle": "pulp build --main MainWindow --to examples/singlewindow/mainwindow.js && pulp build --main App --to examples/singlewindow/app.js && electron examples/singlewindow/app.js",
     "start": "pulp build --to index.js && electron index.js",
     "test": "pulp test"
   },
